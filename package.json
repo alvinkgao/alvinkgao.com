@@ -34,8 +34,6 @@
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "babel-loader": "^8.0.6",
-    "gh-pages": "^2.1.0",
-    "webpack": "^4.39.1"
+    "gh-pages": "^2.1.0"
   }
 }
