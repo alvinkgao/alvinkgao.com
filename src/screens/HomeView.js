@@ -1,21 +1,13 @@
 import React from "react";
-import logo from "../logo.svg";
+
+import { Typography } from "@material-ui/core/";
 
 const HomeView = () => (
   <div className="App">
     <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>
+      <Typography variant="h1">
         <strong>Alvin Gao</strong>
-      </p>
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
+      </Typography>
     </header>
   </div>
 );
