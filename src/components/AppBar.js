@@ -1,5 +1,6 @@
 import React from "react";
 import clsx from "clsx";
+import { Redirect } from "react-router-dom";
 
 import {
   Drawer,
@@ -154,12 +155,24 @@ export default function CustomAppBar() {
         <Divider />
         <List>
           {[
-            { text: "Home", icon: <HomeIcon /> },
-            { text: "Resume", icon: <DescriptionIcon /> },
-            { text: "Projects", icon: <BuildIcon /> },
-            { text: "Contact Me", icon: <PersonIcon /> }
-          ].map(({ text, icon }) => (
-            <ListItem button key={text}>
+            { text: "Home", icon: <HomeIcon />, redirectTo: "/" },
+            {
+              text: "Resume",
+              icon: <DescriptionIcon />,
+              redirectTo: "/Resume"
+            },
+            { text: "Projects", icon: <BuildIcon />, redirectTo: "/Projects" },
+            {
+              text: "Contact Me",
+              icon: <PersonIcon />,
+              redirectTo: "/ContactMe"
+            }
+          ].map(({ text, icon, redirectTo }) => (
+            <ListItem
+              button
+              key={text}
+              onClick={() => <Redirect to={redirectTo} push />}
+            >
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
@@ -168,10 +181,14 @@ export default function CustomAppBar() {
         <Divider />
         <List>
           {[
-            { text: "Blog", icon: <QuestionAnswerIcon /> },
-            { text: "Hobbies", icon: <FavoriteIcon /> }
-          ].map(({ text, icon }) => (
-            <ListItem button key={text}>
+            { text: "Blog", icon: <QuestionAnswerIcon />, redirectTo: "/Blog" },
+            { text: "Hobbies", icon: <FavoriteIcon />, redirectTo: "/Hobbies" }
+          ].map(({ text, icon, redirectTo }) => (
+            <ListItem
+              button
+              key={text}
+              onClick={() => <Redirect to={redirectTo} push />}
+            >
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
