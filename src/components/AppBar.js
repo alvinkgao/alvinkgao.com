@@ -1,6 +1,5 @@
 import React from "react";
 import clsx from "clsx";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
 
 import {
   Drawer,
@@ -16,18 +15,16 @@ import {
   ListItemText
 } from "@material-ui/core";
 
-// import {
-//   MenuIcon,
-//   ChevronLeftIcon,
-//   ChevronRightIcon,
-//   InboxIcon,
-//   MailIcon
-// } from "@material-ui/icons";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
-import MailIcon from "@material-ui/icons/Mail";
+import HomeIcon from "@material-ui/icons/Home";
+import PersonIcon from "@material-ui/icons/Person";
+import DescriptionIcon from "@material-ui/icons/Description";
+import FavoriteIcon from "@material-ui/icons/Favorite";
+import BuildIcon from "@material-ui/icons/Build";
+import QuestionAnswerIcon from "@material-ui/icons/QuestionAnswer";
 
 const drawerWidth = 240;
 
@@ -156,22 +153,26 @@ export default function CustomAppBar() {
         </div>
         <Divider />
         <List>
-          {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+          {[
+            { text: "Home", icon: <HomeIcon /> },
+            { text: "Resume", icon: <DescriptionIcon /> },
+            { text: "Projects", icon: <BuildIcon /> },
+            { text: "Contact Me", icon: <PersonIcon /> }
+          ].map(({ text, icon }) => (
             <ListItem button key={text}>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
+              <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
           ))}
         </List>
         <Divider />
         <List>
-          {["All mail", "Trash", "Spam"].map((text, index) => (
+          {[
+            { text: "Blog", icon: <QuestionAnswerIcon /> },
+            { text: "Hobbies", icon: <FavoriteIcon /> }
+          ].map(({ text, icon }) => (
             <ListItem button key={text}>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
+              <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
           ))}
