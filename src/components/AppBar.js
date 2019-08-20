@@ -125,7 +125,7 @@ const CustomAppBar = props => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Alvin Gao
+            {`Alvin Gao / ${props.history.location.pathname.slice(1)}`}
           </Typography>
         </Toolbar>
       </AppBar>
