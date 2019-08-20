@@ -13,8 +13,8 @@ import { AppBar } from "./components";
 function App() {
   return (
     <Fragment>
-      <AppBar />
       <BrowserRouter>
+        <AppBar />
         <Switch>
           <Route exact path="/" render={Home} />
           <Route path="/Resume" render={Resume} />

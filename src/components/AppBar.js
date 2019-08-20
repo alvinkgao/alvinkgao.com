@@ -1,6 +1,6 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 import clsx from "clsx";
-import { Redirect } from "react-router-dom";
 
 import {
   Drawer,
@@ -90,7 +90,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function CustomAppBar() {
+const CustomAppBar = props => {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -171,7 +171,9 @@ export default function CustomAppBar() {
             <ListItem
               button
               key={text}
-              onClick={() => <Redirect to={redirectTo} push />}
+              onClick={() => {
+                props.history.push(redirectTo);
+              }}
             >
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
@@ -187,7 +189,7 @@ export default function CustomAppBar() {
             <ListItem
               button
               key={text}
-              onClick={() => <Redirect to={redirectTo} push />}
+              onClick={() => props.history.push(redirectTo)}
             >
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
@@ -197,4 +199,6 @@ export default function CustomAppBar() {
       </Drawer>
     </div>
   );
-}
+};
+
+export default withRouter(CustomAppBar);
