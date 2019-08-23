@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Typography } from "@material-ui/core/";
 import Links from "../components/Links";
-import FlipClock from "react-flip-clocks/App";
 
 const Home = () => (
   <div className="App">
