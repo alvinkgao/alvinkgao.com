@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  position: relative;
 }
 
 .App-header {
@@ -10,4 +11,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
+}
+
+.Links {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
