@@ -163,9 +163,9 @@ const CustomAppBar = props => {
             },
             { text: "Projects", icon: <BuildIcon />, redirectTo: "/Projects" },
             {
-              text: "Contact Me",
+              text: "About Me",
               icon: <PersonIcon />,
-              redirectTo: "/ContactMe"
+              redirectTo: "/AboutMe"
             }
           ].map(({ text, icon, redirectTo }) => (
             <ListItem

@@ -4,9 +4,14 @@ import { Typography } from "@material-ui/core/";
 
 const Resume = () => (
   <div className="App">
-    <header className="App-header">
+    <div className="split left">
       <Typography variant="h1">Resume Under Construction</Typography>
-    </header>
+      <br />
+      <Typography variant="h4">Select a resume</Typography>
+    </div>
+    <div className="split right">
+      <Typography>resume will go here</Typography>
+    </div>
   </div>
 );
 
