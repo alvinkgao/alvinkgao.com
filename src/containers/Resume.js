@@ -17,7 +17,6 @@ const Resume = () => (
         width="100%"
         height="100%"
       ></iframe>
-      <Typography>resume will go here</Typography>
     </div>
   </Fragment>
 );
