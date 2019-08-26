@@ -34,15 +34,18 @@ const App = () => {
       <Provider store={store}>
         <MuiThemeProvider theme={theme}>
           <BrowserRouter>
-            <AppBar />
-            <Switch>
-              <Route exact path="/" render={Home} />
-              <Route path="/Resume" render={Resume} />
-              <Route path="/Projects" render={Projects} />
-              <Route path="/AboutMe" render={AboutMe} />
-              <Route path="/Blog" render={Blog} />
-              <Route path="/Hobbies" render={Hobbies} />
-            </Switch>
+            <div className="App">
+              <AppBar>
+                <Switch>
+                  <Route exact path="/" render={() => <Home />} />
+                  <Route path="/Resume" render={() => <Resume />} />
+                  <Route path="/Projects" render={() => <Projects />} />
+                  <Route path="/AboutMe" render={() => <AboutMe />} />
+                  <Route path="/Blog" render={() => <Blog />} />
+                  <Route path="/Hobbies" render={() => <Hobbies />} />
+                </Switch>
+              </AppBar>
+            </div>
           </BrowserRouter>
         </MuiThemeProvider>
       </Provider>

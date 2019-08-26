@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import { Typography } from "@material-ui/core/";
 import Links from "../components/Links";
 
 const AboutMe = () => (
-  <div className="App">
+  <Fragment>
     <div className="split left">
       <Typography variant="h1">About Me</Typography>
     </div>
@@ -12,7 +12,7 @@ const AboutMe = () => (
       <Typography variant="inherit">Hi There</Typography>
       <Links />
     </div>
-  </div>
+  </Fragment>
 );
 
 export default AboutMe;

@@ -1,13 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import { Typography } from "@material-ui/core/";
 
 const Blog = () => (
-  <div className="App">
+  <Fragment>
     <header className="App-header">
       <Typography variant="h1">Blog Under Construction</Typography>
     </header>
-  </div>
+  </Fragment>
 );
 
 export default Blog;

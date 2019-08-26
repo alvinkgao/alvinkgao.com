@@ -20,17 +20,18 @@
 }
 
 .split {
-  height: 100%;
-  width: 50%;
+  top: 64px;
+  height: calc(100% - 64px);
+  width: calc((100% - 64px) / 2);
   position: fixed;
   z-index: 1;
-  top: 0;
   overflow-x: hidden;
   padding-top: 20px;
 }
 
 .left {
-  left: 0;
+  position: fixed;
+  left: 64px;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -38,6 +39,7 @@
 }
 
 .right {
+  position: fixed;
   right: 0;
   min-height: 100vh;
   display: flex;
