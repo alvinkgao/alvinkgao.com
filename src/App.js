@@ -23,7 +23,7 @@ const reducer = (state = initialState, action) => {
 // };
 const theme = createMuiTheme({
   typography: {
-    fontFamily: "Courier"
+    fontFamily: "Raleway"
   }
 });
 const App = () => {
