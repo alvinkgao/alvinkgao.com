@@ -1,15 +1,10 @@
 import React, { Fragment } from "react";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 
-import Home from "./containers/Home";
-import Resume from "./containers/Resume";
-import Projects from "./containers/Projects";
-import AboutMe from "./containers/AboutMe";
-import Blog from "./containers/Blog";
-import Hobbies from "./containers/Hobbies";
+import AppRouter from "./AppRouter";
 import { AppBar } from "./components";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
@@ -26,7 +21,22 @@ const reducer = (state = initialState, action) => {
 //     count: state.count
 //   };
 // };
-const theme = createMuiTheme({});
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: [
+      "-apple-system",
+      "BlinkMacSystemFont",
+      '"Segoe UI"',
+      "Roboto",
+      '"Helvetica Neue"',
+      "Arial",
+      "sans-serif",
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"'
+    ].join(",")
+  }
+});
 const App = () => {
   const store = createStore(reducer);
   return (
@@ -36,14 +46,7 @@ const App = () => {
           <BrowserRouter>
             <div className="App">
               <AppBar>
-                <Switch>
-                  <Route exact path="/" render={() => <Home />} />
-                  <Route path="/Resume" render={() => <Resume />} />
-                  <Route path="/Projects" render={() => <Projects />} />
-                  <Route path="/AboutMe" render={() => <AboutMe />} />
-                  <Route path="/Blog" render={() => <Blog />} />
-                  <Route path="/Hobbies" render={() => <Hobbies />} />
-                </Switch>
+                <Route render={() => <AppRouter />}></Route>
               </AppBar>
             </div>
           </BrowserRouter>
