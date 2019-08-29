@@ -6,17 +6,11 @@ import Links from "../components/Links";
 const Home = () => (
   <header className="App-header">
     <Link to="/AboutMe" style={{ color: "black", textDecoration: "none" }}>
-      <div className="firstname">
-        <Typography variant="h1">A</Typography>
-        <Typography variant="h1">L</Typography>
-        <Typography variant="h1">V</Typography>
-        <Typography variant="h1">I</Typography>
-        <Typography variant="h1">N</Typography>
+      <div className="typewriter1">
+        <Typography variant="h1">ALVIN</Typography>
       </div>
-      <div className="lastname">
-        <Typography variant="h1">G</Typography>
-        <Typography variant="h1">A</Typography>
-        <Typography variant="h1">O</Typography>
+      <div className="typewriter2">
+        <Typography variant="h1">GAO</Typography>
       </div>
     </Link>
     <Links />
