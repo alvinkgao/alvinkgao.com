@@ -47,74 +47,13 @@
   flex-direction: column;
 }
 
-.firstname {
-  animation: fade1 2s ease;
-  display: flex;
-  opacity: 0;
-  animation-fill-mode: forwards;
-}
-
-.middlename {
-  animation: fade2 2s ease;
-  display: flex;
-  opacity: 0;
-  animation-fill-mode: forwards;
-}
-
-.lastname {
-  animation: fade3 2s ease;
-  display: flex;
-  opacity: 0;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fade1 {
-  0% {
-    opacity: 0;
-    transform: translateX(-200px);
-  }
-  33% {
-    opacity: 1;
-    transform: translateX(initial);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade2 {
-  33% {
-    opacity: 0;
-    transform: translateX(200px);
-  }
-  67% {
-    opacity: 1;
-    transform: translateX(initial);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade3 {
-  67% {
-    opacity: 0;
-    transform: translateX(-200px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(initial);
-  }
-}
-
 .typewriter1 h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing1 1.5s ease, blink-caret 1.5s ease;
-  animation-fill-mode: forwards;
+  animation: typing 1.5s ease, blink-caret 1.5s ease forwards;
 }
 .typewriter2 h1 {
   visibility: hidden;
@@ -123,13 +62,13 @@
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing1 1.5s ease, blink-caret 1.5s ease;
+  animation: typing 1.5s ease, blink-caret 1.5s ease;
   animation-delay: 1.5s;
   animation-fill-mode: forwards;
 }
 
 /* The typing effect */
-@keyframes typing1 {
+@keyframes typing {
   from {
     visibility: visible;
     width: 0;
