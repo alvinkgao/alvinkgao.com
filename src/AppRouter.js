@@ -6,7 +6,7 @@ import Resume from "./containers/Resume";
 import Projects from "./containers/Projects";
 import AboutMe from "./containers/AboutMe";
 import Blog from "./containers/Blog";
-import Hobbies from "./containers/Hobbies";
+import Hobbies from "./containers/HobbiesContainer/Hobbies";
 
 const AppRouter = props => (
   <Switch>

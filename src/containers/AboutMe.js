@@ -10,10 +10,12 @@ const AboutMe = () => (
       <Typography variant="h1">About Me</Typography>
     </div>
     <div className="split right">
-      <Typography variant="inherit">{`Hello. Welcome to my portfolio.
-      I'm currently a rising 4th year at University of California - Irvine expecting to graduate in April of 2021.
-      I'm also a software developer intern at Ardent Labs where I do mostly front-end development with React and GraphQL.
-      I occassionally delve into a little bit of back-end with Node.js.`}</Typography>
+      <Typography variant="h5">{`Hello. Welcome to my portfolio.
+      I'm currently a computer science and engineering student at University 
+      of California - Irvine expecting to graduate in April of 2021. During the 
+      school year, I also do software development at Ardent Labs where I do 
+      mostly front-end development with React and GraphQL. I occassionally delve 
+      into a little bit of back-end with Node.js.`}</Typography>
 
       <br />
 
