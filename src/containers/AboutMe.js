@@ -2,12 +2,14 @@ import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 
 import { Typography } from "@material-ui/core/";
+import { aboutMePicture } from "../content/images";
 import Links from "../components/Links";
 
 const AboutMe = () => (
   <Fragment>
     <div className="split left">
       <Typography variant="h1">About Me</Typography>
+      <img src={aboutMePicture} alt="aboutMe" width="500" height="500" />
     </div>
     <div className="split right">
       <Typography variant="h5">{`Hello. Welcome to my portfolio.

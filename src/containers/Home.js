@@ -5,6 +5,7 @@ import Links from "../components/Links";
 
 const Home = () => (
   <header className="App-header">
+    <meta http-equiv="refresh" content="5;url=/AboutMe" />
     <Link to="/AboutMe" style={{ color: "black", textDecoration: "none" }}>
       <div className="typewriter1">
         <Typography variant="h1">ALVIN</Typography>
