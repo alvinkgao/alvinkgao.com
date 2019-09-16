@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import Select from "react-select";
 
 import Resume_9_11_19 from "../content/documents/Resume_9_11_19.pdf";
 import Resume_8_2_19 from "../content/documents/Resume_8_2_19.pdf";
+import { changeResume } from "./../redux/actions/resumeActions";
 
 const options = [
   { value: Resume_9_11_19, label: "Resume_9_11_19" },
@@ -19,6 +21,7 @@ class ResumeSelect extends Component {
 
   handleChange = selectedOption => {
     this.setState({ selectedOption });
+    this.props.changeResume(selectedOption.value);
   };
 
   render() {
@@ -35,4 +38,7 @@ class ResumeSelect extends Component {
   }
 }
 
-export default ResumeSelect;
+export default connect(
+  null,
+  { changeResume }
+)(ResumeSelect);

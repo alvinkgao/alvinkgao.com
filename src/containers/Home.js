@@ -5,7 +5,11 @@ import Links from "../components/Links";
 
 const Home = () => (
   <header className="App-header">
-    <meta http-equiv="refresh" content="5;url=/AboutMe" />
+    <script>
+      {setTimeout(function() {
+        window.location.href = "/AboutMe";
+      }, 3000)}
+    </script>
     <Link to="/AboutMe" style={{ color: "black", textDecoration: "none" }}>
       <div className="typewriter1">
         <Typography variant="h1">ALVIN</Typography>

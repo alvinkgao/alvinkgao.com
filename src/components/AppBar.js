@@ -25,7 +25,7 @@ import PersonIcon from "@material-ui/icons/Person";
 import DescriptionIcon from "@material-ui/icons/Description";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import BuildIcon from "@material-ui/icons/Build";
-import QuestionAnswerIcon from "@material-ui/icons/QuestionAnswer";
+// import QuestionAnswerIcon from "@material-ui/icons/QuestionAnswer";
 
 const drawerWidth = 240;
 
@@ -183,7 +183,7 @@ const CustomAppBar = props => {
         <Divider />
         <List>
           {[
-            { text: "Blog", icon: <QuestionAnswerIcon />, redirectTo: "/Blog" },
+            // { text: "Blog", icon: <QuestionAnswerIcon />, redirectTo: "/Blog" },
             { text: "Hobbies", icon: <FavoriteIcon />, redirectTo: "/Hobbies" }
           ].map(({ text, icon, redirectTo }) => (
             <ListItem

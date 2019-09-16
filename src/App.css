@@ -53,8 +53,8 @@
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 1.5s ease, blink-caret 1.5s ease forwards,
-    fade-out 1.5s ease forwards 3s;
+  animation: typing 1s ease, blink-caret 1s ease forwards,
+    fade-out 1s ease forwards 2s;
 }
 .typewriter2 h1 {
   visibility: hidden;
@@ -63,8 +63,8 @@
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 1.5s ease forwards 1.5s,
-    blink-caret 1.5s ease forwards 1.5s, fade-out 1.5s ease forwards 3s;
+  animation: typing 1s ease forwards 1s, blink-caret 1s ease forwards 1s,
+    fade-out 1s ease forwards 2s;
 }
 
 /* The typing effect */
