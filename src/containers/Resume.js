@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import resume from "../content/documents/Resume_9_11_19.pdf";
 
 import { Typography } from "@material-ui/core/";
 import { Links, ResumeSelect } from "../components";
