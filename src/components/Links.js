@@ -3,7 +3,11 @@ import { githubIcon, gmailIcon, linkedinIcon } from "../content/images";
 
 const Links = () => (
   <div className="Links">
-    <a href="mailto:akgao@uci.edu" target="_blank" rel="noopener noreferrer">
+    <a
+      href="mailto:alvinkgao@gmail.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <img src={gmailIcon} alt="gmail-link" height="30px" width="30px" />
     </a>
     <a
