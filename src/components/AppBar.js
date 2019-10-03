@@ -21,7 +21,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import HomeIcon from "@material-ui/icons/Home";
-import PersonIcon from "@material-ui/icons/Person";
+// import PersonIcon from "@material-ui/icons/Person";
 import DescriptionIcon from "@material-ui/icons/Description";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import BuildIcon from "@material-ui/icons/Build";
@@ -162,11 +162,11 @@ const CustomAppBar = props => {
               redirectTo: "/Resume"
             },
             { text: "Projects", icon: <BuildIcon />, redirectTo: "/Projects" },
-            {
-              text: "About Me",
-              icon: <PersonIcon />,
-              redirectTo: "/AboutMe"
-            }
+            // {
+            //   text: "About Me",
+            //   icon: <PersonIcon />,
+            //   redirectTo: "/AboutMe"
+            // }
           ].map(({ text, icon, redirectTo }) => (
             <ListItem
               button

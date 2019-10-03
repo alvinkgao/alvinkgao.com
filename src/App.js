@@ -5,7 +5,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 import AppRouter from "./AppRouter";
 
-import { AppBar } from "./components";
+import { AppBar, StartAnimation } from "./components";
 import store from "./redux/configureStore";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
@@ -20,11 +20,11 @@ const App = () => {
       <Provider store={store}>
         <MuiThemeProvider theme={theme}>
           <BrowserRouter>
-            <div className="App">
+            <StartAnimation>
               <AppBar>
                 <Route render={() => <AppRouter />}></Route>
               </AppBar>
-            </div>
+            </StartAnimation>
           </BrowserRouter>
         </MuiThemeProvider>
       </Provider>
