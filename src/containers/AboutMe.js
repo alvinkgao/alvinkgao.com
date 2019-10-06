@@ -1,14 +1,14 @@
 import React, { Fragment } from "react";
 
 import { Box, Typography } from "@material-ui/core/";
-import { aboutMePicture } from "../content/images";
+import { aboutMe2Picture } from "../content/images";
 import Links from "../components/Links";
 
 const AboutMe = () => (
   <Fragment>
     <div className="split left">
       {/* <Typography variant="h1">About Me</Typography> */}
-      <img src={aboutMePicture} alt="aboutMe" width="500" height="500" />
+      <img src={aboutMe2Picture} alt="aboutMe" width="500" height="500" />
     </div>
     <div className="split right">
       <Typography variant="h5">

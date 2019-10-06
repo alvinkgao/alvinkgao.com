@@ -1,4 +1,5 @@
 export { default as aboutMePicture } from "./aboutMe.jpg";
+export { default as aboutMe2Picture } from "./aboutMe2.jpg";
 export { default as alumniDay2017 } from "./alumniDay2017.jpg";
 export {
   default as callahanSectionals2019
