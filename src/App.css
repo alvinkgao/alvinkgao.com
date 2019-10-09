@@ -48,6 +48,11 @@
   flex-direction: column;
 }
 
+.text {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
 .typewriter1 h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid orange; /* The typwriter cursor */

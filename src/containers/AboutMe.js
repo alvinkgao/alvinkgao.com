@@ -10,7 +10,7 @@ const AboutMe = () => (
       {/* <Typography variant="h1">About Me</Typography> */}
       <img src={aboutMe2Picture} alt="aboutMe" width="500" height="500" />
     </div>
-    <div className="split right">
+    <div className="split right text">
       <Typography variant="h5">
         <Box fontWeight="fontWeightBold">
           Hello! My name is Alvin Gao. I am an aspiring full-stack developer.
