@@ -2,12 +2,11 @@ import React, { Component } from "react";
 
 class Header extends Component {
   render() {
-    let name, occupation, description, city, networks, school, graduationDate;
+    let name, occupation, description, networks, school, graduationDate;
     if (this.props.data) {
       name = this.props.data.name;
       occupation = this.props.data.occupation;
       description = this.props.data.description;
-      city = this.props.data.address.city;
       networks = this.props.data.social.map((network) => {
         return (
           <li key={network.name}>
@@ -47,7 +46,7 @@ class Header extends Component {
                 Resume
               </a>
             </li>
-            <li>
+            {/* <li>
               <a className="smoothscroll" href="#portfolio">
                 Works
               </a>
@@ -56,7 +55,7 @@ class Header extends Component {
               <a className="smoothscroll" href="#contact">
                 Contact
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
 

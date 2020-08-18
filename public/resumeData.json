@@ -7,18 +7,18 @@
     "graduationDate": "December 2020",
     "description": "I recently completed my SDE internship at Amazon where I worked on the Personalization eBooks team. I used Java to create the logic that generates the recommenders on various storefronts",
     "image": "profilepic.jpg",
-    "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "bio": "During my first job as an instructor, I learned that I really enjoyed mentoring and seeing others succeed. I believe in lifelong learning and always seek advice from my own mentors as well as encouraging my peers do the same. As a developer, I enjoy working with others to solve problems as I believe effective communication among peers leads to practical and elegant solutions.",
+    "bio2": "Outside of coding, I spend a lot of my time playing competitive ultimate frisbee. I have captained and coached my college team and I have also played in the club division. I also made the practice team for a semi-professional team in LA.",
     "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
     "email": "alvinkgao@gmail.com",
     "phone": "510-388-2062",
     "address": {
       "street": "(Your Street)",
-      "city": "(Your City)",
-      "state": "(Your State)",
-      "zip": "(Your Zip/Postal Code)"
+      "city": "Irvine",
+      "state": "CA",
+      "zip": "92617"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload": "http://timbakerdev.com",
+    "resumedownload": "https://drive.google.com/file/d/1M5ICa5NP0AG29UiFd9kQ3j7_3Bvdw0d2/view?usp=sharing",
     "social": [
       {
         "name": "facebook",
@@ -41,30 +41,47 @@
     "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
     "education": [
       {
-        "school": "University?",
-        "degree": "Masters in Beer tasting",
-        "graduated": "April 2007",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
-      },
-      {
-        "school": "School #1 Maybe College?",
-        "degree": "What did you study 101",
-        "graduated": "March 2003",
-        "description": "Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school": "University of California - Irvine",
+        "degree": "Bachelors of Science in Computer Science and Engineering",
+        "graduated": "Expected December 2020",
+        "description": "As a Computer Science and Engineering major at UCI, I ended up taking more math, physics, and circuits classes than a normal Computer Science major. By taking classes with such breadth, I discovered that I had the most interest in software development. I thoroughly enjoyed taking classes in engineering ethics, data structures, algorithms, systems, and compilers."
       }
     ],
     "work": [
       {
-        "company": "Awesome Design Studio",
-        "title": "Senior UX God ",
-        "years": "March 2010 - Present",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company": "Amazon.com",
+        "positions": [
+          {
+            "title": "Software Development Engineer Intern",
+            "years": "May 2020 - July 2020",
+            "description": "I worked on the Personalization eBooks team where I used Java create the logic that generates recommenders on various storefronts such as amazon.com/ebooks, kindle, and fire tablets. I specifically worked on creating the \"Inspired by your Browsing History in Genre\" recommender which recommends books based on the customer's recent browsing in a genre. This recommender is \"Personalized\" as the recommender is specific to each customer."
+          }
+        ]
       },
       {
-        "company": "Super Cool Studio",
-        "title": "Junior bug fixer",
-        "years": "March 2007 - February 2010",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company": "Ardent Labs",
+        "positions": [
+          {
+            "title": "Software Engineer",
+            "years": "July 2019 - May 2020",
+            "description": "I led a team of 4 interns to maintain and update one of the internal web apps. I also worked on the back-end API when it was blocking front-end development. This includes creating migration scripts, new GraphQL types and mutations, and hooks. My most significant work has been improving the usability of the front-end application. For example, I implemented GraphQL Pagination improving latency, implemented automatic email and SMS confirmations decreasing tedious tasks, and built the counseling management feature for more efficient scheduling of meetings."
+          },
+          {
+            "title": "Software Developer Intern",
+            "years": "Sept. 2018 - July 2019",
+            "description": "This was my first experience working with code outside of coursework from school. I started off learning Javascript (ES6), React, and GraphQL, and tackling bug fixes in front-end web applications. As I grew more comfortable with the codebase, I added features such as direct text and emails using Twilio API, and refactored one of the web apps to reduce technical debt and improve readibility."
+          }
+        ]
+      },
+      {
+        "company": "Ardent Academy",
+        "positions": [
+          {
+            "title": "Instructor",
+            "years": "May 2018 - July 2019",
+            "description": "I was an instructor for summer camp and afterschool supplementary courses where I taught courses geared for kids in middle school and high school. The courses I taught include: Python 1, Computer Olympiad, Physics: Mechanics, Math Olympiad, and Accelerated Math."
+          }
+        ]
       }
     ],
     "skills": [
